@@ -1,0 +1,24 @@
+{
+    "family": "rolling-records-ecom-frontend",
+    "executionRoleArn": "arn:aws:iam::962915306949:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "containerDefinitions": [
+        {
+            "name": "rolling-records-ecom-frontend",
+            "image": "962915306949.dkr.ecr.eu-central-1.amazonaws.com/rolling-records-ecom-frontend:latest",
+            "portMappings": [
+                {
+                    "containerPort": 3001,
+                    "hostPort": 3001,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true
+        }
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "512",
+    "memory": "1024"
+}
