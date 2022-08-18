@@ -76,6 +76,6 @@ jobs:
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
-        service: next-uk-post-codes-ecs-service
-        cluster: next-uk-post-codes-cluster
+        service: frontend-app-server
+        cluster: rolling-records-ecom-frontend
         wait-for-service-stability: true
