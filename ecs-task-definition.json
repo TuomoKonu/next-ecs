@@ -1,11 +1,11 @@
 {
-    "family": "rolling-records-ecom-frontend",
+    "family": "rolling-records-frontend",
     "executionRoleArn": "arn:aws:iam::962915306949:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
     "containerDefinitions": [
         {
-            "name": "rolling-records-ecom-frontend",
-            "image": "962915306949.dkr.ecr.eu-central-1.amazonaws.com/rolling-records-ecom-frontend:latest",
+            "name": "rolling-records-frontend",
+            "image": "962915306949.dkr.ecr.eu-central-1.amazonaws.com/rolling-records-frontend:latest",
             "portMappings": [
                 {
                     "containerPort": 3001,
